@@ -75,7 +75,7 @@
         return;
     }
     
-    [self observeNavigationController];
+//    [self observeNavigationController];
     
     // 开始展示
     [self showNextNode];
@@ -86,7 +86,7 @@
     if (_flowComplete) {
         _flowComplete(self, _fcModel);
     }
-    [self cancelObserveToNavigationController];
+//    [self cancelObserveToNavigationController];
 }
 
 #pragma mark - 私有方法
@@ -118,29 +118,28 @@
     else {
         [self finish];
     }
-    
 }
 
 #pragma mark -
 #pragma mark 增加对UINavigationController的监听，为了应对back时，数据更新不及时
-- (void)observeNavigationController
-{
-    if (_fcNavContainer) {
-        [_fcNavContainer addObserver:self forKeyPath:@"topViewController" options: NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
-    }
-}
-
-- (void)cancelObserveToNavigationController
-{
-    
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if (object == _fcNavContainer) {
-        NSLog(@"wzf= log [%s](%d) => %@",__func__,__LINE__,@(_fcNavContainer.childViewControllers.count));
-    }
-}
+//- (void)observeNavigationController
+//{
+//    if (_fcNavContainer) {
+//        [_fcNavContainer addObserver:self forKeyPath:@"topViewController" options: NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+//    }
+//}
+//
+//- (void)cancelObserveToNavigationController
+//{
+//    
+//}
+//
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+//{
+//    if (object == _fcNavContainer) {
+//        NSLog(@"wzf= log [%s](%d) => %@",__func__,__LINE__,@(_fcNavContainer.childViewControllers.count));
+//    }
+//}
 
 #pragma mark -
 #pragma mark 内存回收
