@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Jeff' => 'fengpromail@163.com' }
   s.source       = { :git => "https://github.com/wzf/FlowController.git"}
   s.platform     = :ios
-  s.source_files = 'FCDemo/*.{h,m}'
+  s.source_files = 'FCDemo/Classes/*.{h,m}'
   s.framework    = ""
   s.requires_arc = true
 end
