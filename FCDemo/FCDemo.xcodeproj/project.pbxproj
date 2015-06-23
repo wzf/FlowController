@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B27E5F21B18110200BE1B51 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B27E5F11B18110200BE1B51 /* ContainerViewController.m */; };
 		0BDE1EA51B171C0D00E86948 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE1EA41B171C0D00E86948 /* main.m */; };
 		0BDE1EA81B171C0D00E86948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE1EA71B171C0D00E86948 /* AppDelegate.m */; };
 		0BDE1EAB1B171C0D00E86948 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE1EAA1B171C0D00E86948 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B27E5F01B18110200BE1B51 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		0B27E5F11B18110200BE1B51 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		0BDE1E9F1B171C0D00E86948 /* FCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDE1EA31B171C0D00E86948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BDE1EA41B171C0D00E86948 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B27E5EF1B1810EF00BE1B51 /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				0B27E5F01B18110200BE1B51 /* ContainerViewController.h */,
+				0B27E5F11B18110200BE1B51 /* ContainerViewController.m */,
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
 		0BDE1E961B171C0D00E86948 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		0BDE1EA11B171C0D00E86948 /* FCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0B27E5EF1B1810EF00BE1B51 /* Demo2 */,
 				0BDE1EDA1B171C3D00E86948 /* Demo */,
 				0BDE1EC81B171C2B00E86948 /* Classes */,
 				0BDE1EA61B171C0D00E86948 /* AppDelegate.h */,
@@ -305,6 +318,7 @@
 			files = (
 				0BDE1ED71B171C2B00E86948 /* FCModel.m in Sources */,
 				0BDE1EAB1B171C0D00E86948 /* ViewController.m in Sources */,
+				0B27E5F21B18110200BE1B51 /* ContainerViewController.m in Sources */,
 				0BDE1EE61B171C3D00E86948 /* FlowSwitch.m in Sources */,
 				0BDE1ED91B171C2B00E86948 /* FCNode.m in Sources */,
 				0BDE1EE41B171C3D00E86948 /* FlowInputText.m in Sources */,
@@ -506,6 +520,7 @@
 				0BDE1EC41B171C0D00E86948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BDE1EC51B171C0D00E86948 /* Build configuration list for PBXNativeTarget "FCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +529,7 @@
 				0BDE1EC71B171C0D00E86948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

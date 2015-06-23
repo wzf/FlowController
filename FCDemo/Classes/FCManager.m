@@ -27,6 +27,20 @@
     return self;
 }
 
+/**
+ * 设置第一个node对应的viewcontroller为nav.rootViewController
+ */
+- (void)setupNavRootControllerUseFirstNode;
+{
+    FCNode *node = [_fcModel nodeAtIndex:0];
+    // 有下一个流程节点
+    if (node != nil) {
+        UIViewController<FCOperate> *nodeOperate = [self nodeOperateWithNode:node];
+        // 设置RootViewControllers
+        [self.fcNavContainer setViewControllers:@[nodeOperate]];
+    }
+    _currentFlowIndex = 0;
+}
 
 /**
  * 当前节点处理完成

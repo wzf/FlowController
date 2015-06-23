@@ -14,7 +14,7 @@
 
 @interface FCManager : NSObject <UINavigationControllerDelegate>
 
-@property (nonatomic, weak  ) UINavigationController *fcNavContainer; //
+@property (nonatomic, strong) UINavigationController *fcNavContainer; //
 @property (nonatomic, strong) FCModel *fcModel; //
 
 /**
@@ -24,6 +24,10 @@
  */
 - (instancetype)initWithContainer:(UINavigationController *)nav flwoModel:(FCModel *)aModel;
 
+/**
+ * 设置第一个node对应的viewcontroller为nav.rootViewController
+ */
+- (void)setupNavRootControllerUseFirstNode;
 
 /**
  * 当前节点处理完成
