@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = ""
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Jeff' => 'fengpromail@163.com' }
-  s.source       = { :git => "https://github.com/wzf/FlowController.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/wzf/FlowController.git"}
   s.platform     = :ios
   s.source_files = 'FCDemo/*.{h,m}'
   s.framework    = ""
